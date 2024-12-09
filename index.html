@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUET Medical Centre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>RUET Medical Centre</h1>
+        <p>Doctor Scheduling and Appointment System</p>
+    </header>
+    <main>
+        <section id="doctor-list">
+            <h2>Doctor and Staff List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone</th>
+                        <th>Mobile</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dr. Md. Moksed Ali <br><small>Chief Medical Officer</small></td>
+                        <td>0721-750742-3/111</td>
+                        <td>+88 01915997662</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Farida Yasmin <br><small>Deputy Chief Medical Officer</small></td>
+                        <td>0721-750256/679</td>
+                        <td>+8801914254004</td>
+                    </tr>
+                    <tr>
+                        <td>Dr. Md. Azizul Islam <br><small>Senior Medical Officer</small></td>
+                        <td>0721-750742-3/111</td>
+                        <td>+8801712637265<br>+8801919637265</td>
+                    </tr>
+                    <tr>
+                        <td>Md. Joynal Abedin <br><small>Assistant Principal Medical Technologist</small></td>
+                        <td>-</td>
+                        <td>+8801191014940</td>
+                    </tr>
+                    <tr>
+                        <td>Mst. Sultana Parvin <br><small>Staff Nurse</small></td>
+                        <td>-</td>
+                        <td>+8801731913528</td>
+                    </tr>
+                    <tr>
+                        <td>Mst. Rajia Khatun <br><small>Senior Nurse</small></td>
+                        <td>-</td>
+                        <td>+8801987215188</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="appointment">
+            <h2>Book an Appointment</h2>
+            <form action="appointment.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="doctor">Choose a Doctor:</label>
+                <select id="doctor" name="doctor" required>
+                    <option value="Dr. Md. Moksed Ali">Dr. Md. Moksed Ali</option>
+                    <option value="Dr. Farida Yasmin">Dr. Farida Yasmin</option>
+                    <option value="Dr. Md. Azizul Islam">Dr. Md. Azizul Islam</option>
+                </select>
+                <label for="date">Choose a Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Choose a Time:</label>
+                <input type="time" id="time" name="time" required>
+                <button type="submit">Book Appointment</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 RUET Medical Centre</p>
+        <p>
+            <strong>Service Time:</strong> <br> Saturday-Thursday: 07:30AM to 10:00PM <br> Lunch Break: 1:30PM to 3:00PM <br> Friday: Off Day <br><br>
+            <strong>Ambulance Service:</strong> 24 hours Every Day <br>
+            <em>Note: For Ambulance service, please contact any of the above respectable doctors.</em>
+        </p>
+    </footer>
+</body>
+
+</html>
